@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="wrapper wrapper-bg"></div>
+        <div class="wrapper">
+            <!-- search bar -->
+            <div class="search-bar">
+                <input type="text" id="input-text" placeholder="Enter name of your city" />
+                <button id="send">Find</button>
+            </div>
+            <!-- search bar -->
+            <div class="today">
+                <i class="fas fa-times"></i>
+                <p id="timezone"></p>
+                <h1 id="city"></h1>
+                <p id="region"></p>
+                <div class="temp-wrapper">
+                    <h1 id="temp"></h1>
+                    <img id="current-condition" src="" />
+                </div>
+            </div>
+            <div class="other-days">
+                <div class="day-wrapper">
+                    <div class="current-day"></div>
+                    <div class="current-temp">
+                        <span class="temp min-temp"></span>
+                        <span class="temp average-temp"></span>
+                        <span class="temp max-temp"></span>
+                        <img class="icon" src="" alt="icon" />
+                    </div>
+                </div>
+                <div class="day-wrapper">
+                    <div class="current-day"></div>
+                    <div class="current-temp">
+                        <span class="temp min-temp"></span>
+                        <span class="temp average-temp"></span>
+                        <span class="temp max-temp"></span>
+                        <img class="icon" src="" alt="icon" />
+                    </div>
+                </div>
+                <div class="day-wrapper">
+                    <div class="current-day"></div>
+                    <div class="current-temp">
+                        <span class="temp min-temp"></span>
+                        <span class="temp average-temp"></span>
+                        <span class="temp max-temp"></span>
+                        <img class="icon" src="" alt="icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
